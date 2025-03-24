@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2D Animation</title>
+  <style>
+    .boxes{
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      color: white;
+      margin: 50px;
+      font-size: 50px;
+      text-align: center;
+    }
+    .one{
+      transform: translate(0px);
+      transition-duration: 2s;
+    }
+    .one:hover{
+      /* transform: translate(300px); */
+      /* transform: translatey(300px); */
+      transform: translatex(300px);
+      transform: translate(300px, -300px);
+      transition-timing-function:linear;
+      transition-duration: 1s;
+      transition-delay: 1s;
+    }
+    .two{
+      transform:scale(1);
+      transition-duration: 1s;
+    }
+    .two:hover{
+      /* transform: scaleX(2); */
+      /* transform: scaleY(3); */
+      transform: scale(1.5);
+      transition-duration: 1s;
+      transition-timing-function: linear;
+      transition-delay: 1s;
+    }
+    .three{
+      transform:skew(0deg);
+      transition-duration: 1s;
+    }
+    .three:hover{
+      transform:skew(100deg);
+      /* transform: skewx(50deg); */
+      transform:skewy(50deg);
+      transition-duration: 1s;
+    }
+    .four{
+      transform: rotate(0deg);
+      transition-duration: 1s;
+    }
+    .four:hover{
+      transform:rotate(180deg);
+      transition-duration: 1s;
+    }
+    .five{
+      transform:scale(1) rotate(0deg);
+      transition-duration: 1s;
+    }
+    .five:hover{
+      transform: scale(2) rotate(360deg);
+      border-radius: 50%;
+      transition-duration: 2s;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="boxes one">1</div>
+  <div class="boxes two">2</div>
+  <div class="boxes three">3</div>
+  <div class="boxes four">4</div>
+  <div class="boxes five">5</div>
+</body>
+</html>
