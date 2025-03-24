@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internal CSS</title>
+  <style>
+    /* 
+    There are three methods to select html tags and apply
+
+    Method                 int. css                html
+      |                       |                      |
+    1.by Tag   =>         body{css}     =>        <body>
+    2.by class =>         .one{css}     =>        <body class ="one">
+    3.by Id    =>         #demo{css}    =>        <body id="demo">
+
+      
+      id => we can only use single id in a tag
+      class => We can set multiple classes in a tag
+
+      .3demo{} => x
+      #3demo{} => x  => we can't start with number
+    */
+    #heading{
+      text-align: center;
+      background-color: yellow;
+      color: blue;
+      font-size: 50px;
+    }
+    .para{
+      text-align: center;
+      width: 50%;
+      height: 100px;
+      background-color: cyan;
+    }
+    .parent{
+      width: 50%;
+      height: 300px;
+      background-color: black;
+
+    }
+    .child{
+      width: 60%;
+      height: 200px;
+      background-color: yellow;
+    }
+    .head{
+      text-align: center;
+    }
+    .clr{
+      color: blue;
+    }
+
+  </style>
+</head>
+<body>
+  <h1 id="heading">Heading One</h1>
+
+  <p class="para">This is Simple Paragraph</p>
+
+  <div class="parent">
+    <div class="child">
+      <h3 class="head clr">Heading Three</h3>
+    </div>
+  </div>
+</body>
+</html>
