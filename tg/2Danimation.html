@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Animation</title>
+    <style>
+      .boxes{
+        background-color:blue;
+        color:white;
+        text-align:center;
+        font-size: 50px;
+        margin: 50px;
+        width: 200px;
+        height: 200px;
+        line-height: 190px;
+      }
+      .one{
+        transform:translate(0px);
+        transition-duration:1s;
+      }
+      .one:hover{
+        /* transform:translatex(300px);
+        transform:translate(-300px); */
+        transform:translate(-300px, -300px);
+        background-color: red;
+        transition-timing-function: linear;
+        transition-delay:1s;
+      }
+      .two{
+        transform:scale(1);
+        transition-duration:1s;
+      }
+      .two:hover{
+        /* transform:scaley(2);
+        transform:scalex(0.5); */
+        transform:scale(1.5);
+        background-color: green;
+        transition-duration:1s;
+        transition-timing-function: linear;
+        transition-delay:1s;
+      }
+      .tree{
+        transform:skew(0deg);
+        transition-duration: 1s;
+      }
+      .three:hover{
+        /* transform: skew(30deg); */
+        transform:skewy(100deg);
+        transform:skewx(100deg);
+        background-color: yellow;
+        transition-duration:1s;
+        transition-timing-function:linear;
+      }
+      .four{
+        transform:rotate(0deg);
+        transition-duration:1s;
+      }
+      .four:hover{
+        transform:rotate(180deg);
+        background-color: purple;
+        transition-duration:1s;
+      }
+      .five{
+        transform:scale(1) rotate(0deg);
+        transition-duration: 1s;
+      }
+      .five:hover{
+        transform:scale(1.5) rotate(360deg);
+        background-color: orange;
+        transition-duration:2s;
+      }
+      
+      h1{
+        text-transform: uppercase;
+        font-size: 50px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+        background-clip: text;
+        color: transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <marquee behavior="linear" direction="right">
+    <h1>Pankaj kumar</h1>
+  </marquee>
+    <div class="boxes one">1</div>
+    <div class="boxes two">2</div>
+    <div class="boxes three">3</div>
+    <div class="boxes four">4</div>
+    <div class="boxes five">5</div>
+  </body>
+</html>
